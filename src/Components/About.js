@@ -1,7 +1,7 @@
-import { useNavigate } from "react-router-dom";
+
 import { Heading } from "../Components/Heading";
 
-    
+
 export function About(){
     return(
         <Heading>

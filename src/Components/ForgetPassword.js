@@ -1,8 +1,8 @@
-import { useNavigate } from "react-router-dom";
+
 
 
 export default function Forgot(){
-  const history=useNavigate();
+
     return(
         <div>
          <div className="container-50">
@@ -10,7 +10,7 @@ export default function Forgot(){
          
             <div className="grid-item-80">
                 <h2 >Forgot Your Password?</h2>
-                <p className="we">We get it, stuff happens. Just enter your email<br></br>
+                <p className="we">We get it, stuff happens. Just enter your email<br></br>no
                   address below and we'll send you a link to<br></br>
                   reset your password!</p>
                 <form>

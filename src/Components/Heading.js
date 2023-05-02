@@ -2,12 +2,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useNavigate } from "react-router-dom";
+
 import { NavLink } from 'react-router-dom';
 
 
 export function Heading({ children }) {
-    const history = useNavigate();
+  
     return (
         <div className="nav">
             <div className="bar">
