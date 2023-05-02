@@ -1,0 +1,154 @@
+
+  
+  h1{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    margin: 3px;
+    margin-right: 10px;
+   
+  }
+
+
+  .grid-container-lock{
+
+    margin-left: 400px;
+    
+    
+
+  }
+  #bat{
+    margin-left: 200px;
+  }
+  
+  
+   
+   
+  
+  #first1{
+    width: 350px;
+    border-radius: 10rem;
+    border: 1px ;
+    background: #f1f1f1;
+    height: 50px;
+    margin-left:150px ;
+    padding-left: 20px;
+  }
+  #last{
+      width: 350px;
+      border-radius: 10rem;
+      border: 1px ;
+      background: #f1f1f1;
+      height: 50px;
+      margin-left:150px ;
+      margin-top: 5px;
+      padding-left: 20px;
+    
+  }
+  #email{
+    width: 350px;
+    margin-top: 10px;
+    border-radius: 10rem;
+    border: 1px ;
+    background: #f1f1f1;
+    height: 50px;
+    margin-left:150px ;
+    margin-top: 5px;
+    padding-left: 20px;
+  }
+  #password{
+    width: 350px;
+    margin-top: 10px;
+    border-radius: 10rem;
+    border: 1px ;
+    background: #f1f1f1;
+    height: 50px;
+    margin-left:150px ;
+    margin-top: 5px;
+    padding-left: 20px;
+  
+  }
+  #choose{
+    margin-left:170px;
+   }
+  #role-s{
+    width: 340px;
+    margin-top: 20px;
+    margin-left:210px;
+    border-radius: 20px;
+    border: 1px solid black;
+    height: 50px;
+    background-color: #4e73df;
+    color: white;
+    margin-left:160px;
+  }
+  .roll-s{
+      width: 90%;
+     margin-left: 30px;
+     border-top: 1px solid rgba(0,0,0,.1);
+    
+  }
+  #role1{
+      width: 350px;
+      margin-top: 5px;
+      margin-left:210px;
+      border-radius: 20px;
+      border: 1px solid black;
+      height: 50px;
+      background-color: #d62516;
+      color: white;
+      margin-left:160px;
+    }
+  #role2{
+    width: 350px;
+    margin-top: 5px;
+    margin-left:210px;
+    border-radius: 20px;
+    border: 1px solid black;
+    height: 50px;
+    background-color: #3B5998;
+    color: white;
+    margin-left:160px;
+  }
+  .small{
+    margin-top: 20px;
+    margin-left: 330px;
+    color: #4e73df;
+    text-decoration: none;
+    background-color: transparent;
+    margin-left:270px;
+  }
+  
+  .small:hover{
+    text-decoration: underline;
+  }
+
+  #headers{
+    margin-top: 25px;
+    margin-left:200px ;
+    background-color: white;
+  }
+  .Login{
+    background-color: #3B5998;
+  }
+  #back3{
+    margin-left: 700px;
+  margin-top: 150px;
+    background-color: #4e73df;
+    border-radius: 5px;
+    color: white;
+ }
+ #dot2{
+    width: 1200px;
+ }
+ #log{
+    text-decoration: none;
+ }
+ #log:hover{
+    text-decoration: underline;
+ }
+ #Login{
+    background-color:lightblue;
+    width: 1450px;
+    height: 900px;
+ }

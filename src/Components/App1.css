@@ -1,0 +1,68 @@
+.me-auto{
+    margin-left: 650px;
+  }
+  nav{
+    width: 1600px;
+  
+    height: 70px;
+    background-color: black;
+  
+  }
+  
+  
+  #horn{
+    color: white;
+    text-decoration: none;
+  }
+  #horn:hover{
+    color:chartreuse;
+   
+  }
+  #horn1{
+    color: white;
+    text-decoration: none;
+  }
+  #horn1:hover{
+    color:chartreuse;
+  
+  }
+  #horn2{
+    color: white;
+    text-decoration: none;
+  }
+  #horn2:hover{
+    color:chartreuse;
+  
+  }
+  #horn3{
+    color: white;
+    text-decoration: none;
+  }
+  #horn3:hover{
+    color:chartreuse;
+  
+  }
+  #horn4{
+    color: white;
+    text-decoration: none;
+  }
+  #horn4:hover{
+    color:chartreuse;
+  
+  }
+  .fa-phone{
+    font-size: 15px;
+  }
+  .fa-phone:hover{
+    
+    color: chartreuse;
+  }
+  
+  #dark{
+    background-color: black;
+  }
+  #num{
+    font-size: 25px;
+    color: blueviolet;
+  }
+  
