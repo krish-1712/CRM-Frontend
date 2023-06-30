@@ -1,0 +1,67 @@
+.service-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+  }
+  
+  .high1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    padding-left: 30px;
+    padding-top: 20px;
+    height: 500px;
+  }
+  
+  .high1 h1 {
+    text-align: left;
+  }
+  
+  .high2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 500px;
+  }
+  
+  .high2 img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .add {
+    color: black !important;
+    text-align: left;
+  }
+  
+  .error-message {
+    color: crimson;
+    margin: 5px 0;
+  }
+  
+  button[type="submit"] {
+    margin-top: 10px;
+  }
+  
+  .sub {
+    width: 40%;
+  }
+  
+  #pop {
+    width: 150px;
+  }
+  
+  .site {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .paper {
+    color: white;
+  }
+  
+  .can {
+    color: white;
+  }

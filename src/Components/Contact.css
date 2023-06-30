@@ -1,47 +1,43 @@
-.login-wrapper {
+.contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    margin-top: 10px;
   
   }
   
-  .log1 {
+  .cont1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
     padding: 20px;
+  
+    height: 500px;
     background-color: black;
-  
-  
-  
   }
   
-  .log1 h1 {
+  .cont1 h1 {
     text-align: center;
     font-size: 32px;
   }
   
-  .log2 {
+  .cont2 {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: lightsa;
+    width: 600px;
+    height: 500px;
     background-color: black;
-  
-  
-  
   }
   
-  .log2 img {
+  .cont2 img {
     width: 100%;
     max-height: 600px;
   }
   
-  .ads {
-    color: white !important;
+  .add {
+    color: black !important;
     text-align: left;
   }
   
@@ -54,25 +50,15 @@
     margin-top: 10px;
   }
   
-  
-  
-  .lane {
+  .logo {
     width: 100%;
     height: 500px;
-  
   }
   
-  #suit {
-    width: 150px;
-  
+  .rise {
+    color: white;
   }
   
-  #suit1 {
-  
-    width: 150px;
-  
-  }
-  
-  #suit2 {
+  #lack {
     width: 150px;
   }

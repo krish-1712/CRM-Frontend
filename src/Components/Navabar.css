@@ -1,0 +1,57 @@
+#home {
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin-left: 668px;
+
+
+}
+
+.cont {
+    margin-left: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#home1 {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+
+    padding: 10px;
+    width: 300px;
+
+}
+
+#home2 {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.app {
+    color: cyan;
+    font-size: 20px;
+
+}
+
+#meg {
+    margin-left: 760px;
+    margin-top: 100px;
+    width: 600px;
+    height: 500px;
+}
+
+.loot {
+    background-color: black;
+    background-color: cover;
+}

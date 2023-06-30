@@ -1,57 +1,125 @@
-import { useNavigate } from "react-router-dom"
-import { Heading } from "../Components/Heading";
-import { NavLink } from 'react-router-dom';
+import axios from 'axios';
+import { useEffect } from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import { url } from '../App';
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
+import * as yup from 'yup';
+import { useFormik } from 'formik';
 
-export  function Login() {
-    const history=useNavigate();
-    return (
-        <Heading>
-        <div id="Login">
-            <div className="container-2">
-                <div className="grid-container-lock">
-                 
-                    <div className="grid-item-looted">
-                        <h3 id="bat">Welcome Back!</h3>
-                        <form>
-                            <label for="email">
-                                <input type="text" id="email" placeholder='Enter Email Address'></input>
-                            </label>
-                            <br></br>
-                            <label for="Password">
-                                <input type="text" id="password" placeholder='Password'></input>
-                            </label>
-                            <br></br>
-                            <label for="chechbox" className='check1'>
-                                <input type="checkbox" id="choose"></input>
-                                Remember Me
-                            </label>
-                            <br></br>
-                            <button  onClick={()=>history("/Admin")}  type="submit" id='role-s'>Login</button>
-                            <hr className='roll'></hr>
-                            <button type="submit" id='role1' onClick={()=>history("/https://accounts.google.com/InteractiveLogin/signinchooser?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=Af_xneFfj0bU8NnEdlG5A0BIDD9TDUDma15MtHFQIqZOqNVbTAYzrBaX_ngE69Kx6y5c_TikPtMg&flowName=GlifWebSignIn&flowEntry=ServiceLogin")}>
-                                G Login with Google
-                                
-                            </button>
-                            <br></br>
-                            <button type="submit" id='role2' onClick={()=>history("/https://www.facebook.com/")}>
-                                f Login with Facebook
-                            </button>
-                            <hr className='roll'></hr>
-                            <a className="small" href="forgot-password.html">Forgot Password?</a>
-                            <br></br>
-                            <a className="small" href="register.html"><NavLink to='/Sign' id="log">Create an Account!</NavLink></a>
-                        </form>
-                        
-                    </div>
-                </div>
-            </div>
-          
+import './Login.css';
+import Navabar from './Navabar';
+
+const userSchemaValidation = yup.object({
+  email: yup.string().email('Invalid email format').required('Email is required'),
+  password: yup.string().required('Password is required'),
+});
+
+function Login() {
+  const navigate = useNavigate();
+
+  const { handleSubmit, handleChange, errors, touched, values } = useFormik({
+    initialValues: {
+      email: '',
+      password: '',
+    },
+    validationSchema: userSchemaValidation,
+    onSubmit: async (values) => {
+      try {
+        const res = await axios.post(`${url}/users/login`, values);
+        console.log(res);
+        toast.success(res.data.message);
+        sessionStorage.setItem('token', res.data.token);
+        console.log(res.data.userId);
+        sessionStorage.setItem('userId', res.data.userId);
+        console.log("role:", res.data.role)
+        sessionStorage.setItem('role', res.data.role);
+
+        if (res.data.role === 'Employee' || res.data.role === 'Admin' || res.data.role === 'Manager') {
+          navigate('/dashboard');
+        } else {
+          toast.error('Access Denied! Only employees, admins, and managers are allowed to login.');
+        }
+      } catch (error) {
+        console.log('Error:', error.message);
+        toast.error(error.response.data.message);
+      }
+    },
+
+
+  });
+
+  useEffect(() => {
+    const token = sessionStorage.getItem('token');
+    const userId = sessionStorage.getItem('userId');
+
+    if (token && userId) {
+      navigate('/dashboard');
+    }
+  }, [navigate]);
+
+  return (
+    <Navabar>
+
+      <div>
+        <img src='https://www.cxtoday.com/wp-content/uploads/2022/01/CRM-101-Customer-Relationship-Management.jpeg' className='lane' alt=''></img>
+      </div>
+      <div className='login-wrapper'>
+        <div className='log1'>
+          <h1 style={{ textAlign: 'center', color: 'white' }}>Login Here</h1>
+          <Form onSubmit={handleSubmit}>
+            <Form.Group className='mb-3'>
+              <Form.Label className='ads'>Email address</Form.Label>
+              <Form.Control
+                type='email'
+                placeholder='Enter email address'
+                className='email'
+                name='email'
+                value={values.email}
+                onChange={handleChange}
+                style={{ width: '400px' }}
+              />
+              {touched.email && errors.email ? <p style={{ color: 'crimson' }}>{errors.email}</p> : ''}
+            </Form.Group>
+            <Form.Group className='mb-3'>
+              <Form.Label className='ads'>Password</Form.Label>
+              <Form.Control
+                type='password'
+                placeholder='Enter the Password'
+                className='password'
+                name='password'
+                value={values.password}
+                onChange={handleChange}
+                style={{ width: '400px' }}
+              />
+              {touched.password && errors.password ? (
+                <p style={{ color: 'crimson' }}>{errors.password}</p>
+              ) : (
+                ''
+              )}
+            </Form.Group>
+            <Button variant='primary' id='suit' type='submit'>
+              Submit
+            </Button>
+            <Button variant='primary' id='suit1' onClick={() => navigate('/forgot')}>
+              Forgot Password
+            </Button>
+            <Button variant='primary' id='suit2' onClick={() => navigate('/register')}>
+              Create Account
+            </Button>
+          </Form>
         </div>
-        </Heading>
-
-    )
+        <div className='log2'>
+          <img
+            src='https://img.freepik.com/premium-vector/crm-customer-relationship-management-concept-virtual-screen-customer-service-relationship-robotic-hand-touching-digital-interface_127544-772.jpg'
+            alt=''
+            id='late'
+          ></img>
+        </div>
+      </div>
+    </Navabar>
+  );
 }
 
-
-
-
+export default Login;
