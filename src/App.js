@@ -12,8 +12,8 @@ import Navbar from "./components/Navabar";
 import Home from "./components/Home";
 import ContactPage from "./components/ContactPage";
 import URLShortenerForm from "./components/URLShorternerForm";
-// export const url = "http://localhost:3000"
-export const url="https://crm-backend-oofi.onrender.com/";
+export const url = "http://localhost:3000"
+// export const url="https://crm-backend-oofi.onrender.com/";
 
 function App() {
   return (
