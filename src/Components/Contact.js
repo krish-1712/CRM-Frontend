@@ -70,15 +70,12 @@ function Contact() {
 
   return (
     <Navabar>
-      <div>
-        <img src='https://snov.io/blog/wp-content/uploads/2021/02/2jT2rNPfndRmSJ9SOdn9VFEchk8AEKpSGvPPM1Xu-1-1.png' className='logo' alt=''></img>
-      </div>
       <div className='contact-wrapper'>
         <div className='cont1'>
-          <h1 style={{ textAlign: 'center', color: 'white' }}>Contact Create Page!</h1>
+          <h1 style={{ textAlign: 'center', color: 'black' }}> Create Contact Page!</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group className='mb-3'>
-              <Form.Label className='rise'>Name</Form.Label>
+              <Form.Label style={{ marginRight: "350px" }}>Name</Form.Label>
               <Form.Control
                 type='text'
                 placeholder='Enter the Name'
@@ -91,7 +88,7 @@ function Contact() {
               {touched.name && errors.name ? <p style={{ color: 'crimson' }}>{errors.name}</p> : ''}
             </Form.Group>
             <Form.Group className='mb-3'>
-              <Form.Label className='rise'>Email address</Form.Label>
+              <Form.Label style={{ marginRight: "290px" }}>Email address</Form.Label>
               <Form.Control
                 type='email'
                 placeholder='Enter email address'
@@ -104,7 +101,7 @@ function Contact() {
               {touched.email && errors.email ? <p style={{ color: 'crimson' }}>{errors.email}</p> : ''}
             </Form.Group>
             <Form.Group className='mb-3'>
-              <Form.Label className='rise'>Phone Number</Form.Label>
+              <Form.Label style={{ marginRight: "290px" }}>Phone Number</Form.Label>
               <Form.Control
                 type='phone'
                 placeholder='Enter the Phone Number'
@@ -124,12 +121,6 @@ function Contact() {
               Add
             </Button>
           </Form>
-        </div>
-        <div className='cont2'>
-          <img
-            src='https://as1.ftcdn.net/v2/jpg/03/29/64/08/1000_F_329640896_VdAQlqZ7TShpGdsiqYDVvr0h0Y7svhqG.jpg'
-            alt=''
-          />
         </div>
       </div>
     </Navabar>

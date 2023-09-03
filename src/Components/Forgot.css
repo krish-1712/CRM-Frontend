@@ -1,59 +1,61 @@
 .forgot-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 200px;
-  }
-  
-  .for1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: black;
-    margin-left: 30px;
-  }
-  
-  .for1 h1 {
-    text-align: center;
-    font-size: 24px;
-  }
-  
-  .for2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: black;
-  
-  }
-  
-  .for2 img {
-    width: 100%;
-    max-height: 400px;
-  }
-  
-  .light {
-    margin-top: 10px;
-    color: white !important;
-    text-align: left;
-  }
-  
-  .error-message {
-    color: crimson;
-    margin: 5px 0;
-  }
-  
-  button[type='submit'] {
-    margin-top: 10px;
-  }
-  
-  
-  body {
-    background-color: lightskyblue;
-  }
-  
-  .train {
-    width: 100%;
-    height: 500px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://i0.wp.com/www.sutisoft.com/blog/wp-content/uploads/2023/01/CRM.jpg?fit=640%2C360&ssl=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.for1 {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333;
+  margin-right: 20px;
+  max-width: 400px;
+}
+
+.train {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.light {
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.email {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 150px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}

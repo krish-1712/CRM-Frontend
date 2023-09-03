@@ -56,13 +56,11 @@ const Password = () => {
 
   return (
     <Navabar>
-      <div>
-        <img src='https://saaslist.com/uploads/What-is-CRM.jpg' className='dot' alt=''></img>
-      </div>
+
 
       <div className='Password-wrapper'>
         <div className='clock1'>
-          <h1 style={{ "textAlign": "left", color: 'white' }}>Reset Password</h1>
+          <h1 style={{ "textAlign": "left", color: 'black' }}>Reset Password</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3">
               <Form.Label className='ride'>Password</Form.Label>
@@ -73,7 +71,7 @@ const Password = () => {
                 name="password"
                 value={values.password}
                 onChange={handleChange}
-                style={{ width: '400px' }}
+                style={{ width: '300px' }}
               />
               {touched.password && errors.password ? <p className="error-message">{errors.password}</p> : ""}
             </Form.Group>
@@ -86,7 +84,7 @@ const Password = () => {
                 name="newpassword"
                 value={values.newpassword}
                 onChange={handleChange}
-                style={{ width: '400px' }}
+                style={{ width: '300px' }}
               />
               {touched.newpassword && errors.newpassword ? <p className="error-message">{errors.newpassword}</p> : ""}
             </Form.Group>
@@ -95,13 +93,7 @@ const Password = () => {
             </Button>
           </Form>
         </div>
-        <div className='clock2'>
-          <img
-            src="https://s3-us-west-2.amazonaws.com/aa.techdemand.io/wp-content/uploads/2020/09/24133555/CRM-2-1024x631.jpg"
-            alt=""
-            id="look7"
-          />
-        </div>
+
       </div>
     </Navabar>
   );

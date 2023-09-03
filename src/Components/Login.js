@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import * as yup from 'yup';
 import { useFormik } from 'formik';
-
+import { NavLink } from 'react-router-dom';
 import './Login.css';
 import Navabar from './Navabar';
 
@@ -61,16 +61,12 @@ function Login() {
 
   return (
     <Navabar>
-
-      <div>
-        <img src='https://www.cxtoday.com/wp-content/uploads/2022/01/CRM-101-Customer-Relationship-Management.jpeg' className='lane' alt=''></img>
-      </div>
       <div className='login-wrapper'>
         <div className='log1'>
-          <h1 style={{ textAlign: 'center', color: 'white' }}>Login Here</h1>
+          <h1 style={{ textAlign: 'center', color: 'black' }}>Login Here</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group className='mb-3'>
-              <Form.Label className='ads'>Email address</Form.Label>
+              <Form.Label style={{ marginRight: "290px" , color:"black" }} >Email address</Form.Label>
               <Form.Control
                 type='email'
                 placeholder='Enter email address'
@@ -83,7 +79,7 @@ function Login() {
               {touched.email && errors.email ? <p style={{ color: 'crimson' }}>{errors.email}</p> : ''}
             </Form.Group>
             <Form.Group className='mb-3'>
-              <Form.Label className='ads'>Password</Form.Label>
+              <Form.Label style={{ marginRight: "330px",color:"black" }}>Password</Form.Label>
               <Form.Control
                 type='password'
                 placeholder='Enter the Password'
@@ -99,23 +95,15 @@ function Login() {
                 ''
               )}
             </Form.Group>
-            <Button variant='primary' id='suit' type='submit'>
+            <Button variant='primary' id='suit' type='submit' style={{ width: "100px" }}>
               Submit
-            </Button>
-            <Button variant='primary' id='suit1' onClick={() => navigate('/forgot')}>
-              Forgot Password
-            </Button>
-            <Button variant='primary' id='suit2' onClick={() => navigate('/register')}>
-              Create Account
-            </Button>
+            </Button><br></br>
+
+
+            <NavLink to="/forgot" >Forgot Password</NavLink>
+
+            <NavLink to="/register">Create Account</NavLink>
           </Form>
-        </div>
-        <div className='log2'>
-          <img
-            src='https://img.freepik.com/premium-vector/crm-customer-relationship-management-concept-virtual-screen-customer-service-relationship-robotic-hand-touching-digital-interface_127544-772.jpg'
-            alt=''
-            id='late'
-          ></img>
         </div>
       </div>
     </Navabar>

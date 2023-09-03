@@ -1,72 +1,62 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    margin-top: 100px;
-  }
-  
-  .contactpage1 {
-    background-color: black;
-    padding: 20px;
-  }
-  
-  .contactpage2 {
-    background-color:black;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-    
-  .contactpage2 img{
-width: 90%;
-height: 300px;
-  }
-  h1 {
-    text-align: center;
-  }
-  
-  form {
-    display: grid;
-    grid-gap: 10px;
-  }
-  
-  label {
-    margin-bottom: 5px;
-  }
-  
-  input[type='text'],
-  textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    resize: vertical;
-  }
-  
-  input[type='submit'] {
-    background-color: #4caf50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    float: right;
-  }
-  
-  input[type='submit']:hover {
-    background-color: #45a049;
-  }
-  
-  .lot{
-    width: 100%;
-    height: 500px;
-  }
-  .lift{
-    width: 300px;
-  }
+.contactpage1 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  margin: 20px auto;
+  max-width: 400px;
+}
 
-  .lucky{
-    width: 100%;
-    height: 500px;
-  }
-  #none{
-    background-color: green;
-  }
+.lucky {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: white;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.grid-container {
+  background-image: url('https://as1.ftcdn.net/v2/jpg/03/29/64/08/1000_F_329640896_VdAQlqZ7TShpGdsiqYDVvr0h0Y7svhqG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 790px;
+}

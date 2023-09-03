@@ -49,17 +49,13 @@ function Register() {
 
   return (
     <Navabar>
-      <div>
 
-        <img src='https://media.licdn.com/dms/image/D4D12AQH7QmCXBx4oqw/article-cover_image-shrink_720_1280/0/1673885144867?e=2147483647&v=beta&t=2z06vg8jPVNgvMwLH0RFW4tXMwXzcOTSNrqrvvMDug4' className='lap' alt=''></img>
-
-      </div>
       <div className='register-wrapper'>
         <div className='grid-item'>
-          <h1 style={{ "textAlign": "left", color: 'white' }}>Signup Here!</h1>
+          <h1 style={{ "textAlign": "left", color: 'black' }}>Signup Here!</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3">
-              <Form.Label className='proof'>First Name</Form.Label>
+              <Form.Label style={{ marginRight: "350px", color: 'black' }}>First Name</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter the First Name"
@@ -72,7 +68,7 @@ function Register() {
               {touched.firstname && errors.firstname ? <p style={{ color: "crimson" }}>{errors.firstname}</p> : ""}
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label className='proof'>Last Name</Form.Label>
+              <Form.Label style={{ marginRight: "350px", color: 'black' }}>Last Name</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter the Last Name"
@@ -85,7 +81,7 @@ function Register() {
               {touched.lastname && errors.lastname ? <p style={{ color: "crimson" }}>{errors.lastname}</p> : ""}
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label className='proof'>Email address</Form.Label>
+              <Form.Label style={{ marginRight: "320px", color: 'black' }}>Email address</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="Enter email address"
@@ -98,7 +94,7 @@ function Register() {
               {touched.email && errors.email ? <p style={{ color: "crimson" }}>{errors.email}</p> : ""}
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label className='proof'>Password</Form.Label>
+              <Form.Label style={{ marginRight: "350px", color: 'black' }}>Password</Form.Label>
               <Form.Control
                 type="password"
                 placeholder="Enter the Password"
@@ -115,12 +111,7 @@ function Register() {
             </Button>
           </Form>
         </div>
-        <div className='grid-item1'>
-          <img
-            src="https://www.crmpartners.it/wp-content/uploads/2021/01/AdobeStock_287246594-1024x369.jpeg"
-            alt=""
-          />
-        </div>
+
       </div>
     </Navabar>
   );

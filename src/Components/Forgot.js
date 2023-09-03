@@ -38,18 +38,15 @@ const Forgot = () => {
 
   return (
     <Navabar>
-      <div>
-        <img src='https://www.acquisition-international.com/wp-content/uploads/2021/09/CRM-system.jpg' className='train' alt=''></img>
-      </div>
       <div className='forgot-wrapper'>
         <div className='for1'>
-          <h1 style={{ textAlign: 'center', color: 'white' }}>Forgot Password</h1>
-          <h4 className='for' style={{ textAlign: 'center', color: 'white' }}>
+          <h1 style={{ textAlign: 'center', color: 'black' }}>Forgot Password</h1>
+          <h4 className='for' style={{ textAlign: 'center', color: 'black' }}>
             Enter the Email Address Associated with your Account and we will Send you a Link to Reset your Password
           </h4>
           <Form onSubmit={handleSubmit}>
             <Form.Group className='mb-3'>
-              <Form.Label className='light'>Email address</Form.Label>
+              <Form.Label style={{ marginRight: "250px", color: "black" }}>Email address</Form.Label>
               <Form.Control
                 type='email'
                 placeholder='Enter email address'
@@ -57,7 +54,7 @@ const Forgot = () => {
                 name='email'
                 value={values.email}
                 onChange={handleChange}
-                style={{ width: '400px' }}
+                style={{ width: '300px' }}
               />
               {touched.email && errors.email ? <p style={{ color: 'crimson' }}>{errors.email}</p> : ''}
             </Form.Group>
@@ -65,9 +62,6 @@ const Forgot = () => {
               Continue
             </Button>
           </Form>
-        </div>
-        <div className='for2'>
-          <img src='https://i0.wp.com/www.sutisoft.com/blog/wp-content/uploads/2023/01/CRM.jpg?fit=640%2C360&ssl=1' alt='' id='loot' />
         </div>
       </div>
     </Navabar>

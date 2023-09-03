@@ -33,17 +33,14 @@ function URLShortenerForm() {
   return (
     <Navabar>
 
-      <div>
-        <img src='https://thumbs.dreamstime.com/b/crm-isometric-banner-internet-business-strategy-customer-relationship-management-concepts-technologies-set-icons-vector-172930200.jpg' className='try' alt=''></img>
-      </div>
       <div className='short-wrapper'>
         <div className='form1'>
-          <h1 style={{ textAlign: 'center', color: 'white', marginTop: "60px" }}>URL Shorterner</h1>
+          <h1 style={{ textAlign: 'center', color: 'black', }}>URL Shorterner</h1>
           <Form>
             <Form.Group className="mb-3">
-              <Form.Label style={{ "fontSize": "15px", "color": "white", marginTop: "10px", marginLeft: "20px" }}>Enter Your URL</Form.Label>
+              <Form.Label style={{ "fontSize": "15px", "color": "white", }}>Enter Your URL</Form.Label>
               <Form.Control type="text" placeholder="eg:https://www.example.com" value={originalURL} onChange={handleInputChange}
-                style={{ "width": "70%", marginLeft: "20px" }} />
+              />
             </Form.Group>
 
             <Button variant="primary" id='clicks' onClick={handleShortenURL}>
@@ -51,9 +48,6 @@ function URLShortenerForm() {
               {shortenedURL && <p>Shortened URL: {shortenedURL}</p>}
             </Button>
           </Form>
-        </div>
-        <div className='form2'>
-          <img src='https://www.apptivo.com/wp-content/uploads/2021/06/CRM-Importance-In-Business-A-Comprehensive-Overview-.png' alt='' id='' />
         </div>
       </div>
     </Navabar>

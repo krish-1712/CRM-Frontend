@@ -1,64 +1,60 @@
 .contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 10px;
-  
-  }
-  
-  .cont1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  
-    height: 500px;
-    background-color: black;
-  }
-  
-  .cont1 h1 {
-    text-align: center;
-    font-size: 32px;
-  }
-  
-  .cont2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    width: 600px;
-    height: 500px;
-    background-color: black;
-  }
-  
-  .cont2 img {
-    width: 100%;
-    max-height: 600px;
-  }
-  
-  .add {
-    color: black !important;
-    text-align: left;
-  }
-  
-  .error-message {
-    color: crimson;
-    margin: 5px 0;
-  }
-  
-  button[type='submit'] {
-    margin-top: 10px;
-  }
-  
-  .logo {
-    width: 100%;
-    height: 500px;
-  }
-  
-  .rise {
-    color: white;
-  }
-  
-  #lack {
-    width: 150px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://snov.io/blog/wp-content/uploads/2021/02/2jT2rNPfndRmSJ9SOdn9VFEchk8AEKpSGvPPM1Xu-1-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cont1 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  color: #007bff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #555;
+}
+
+.input-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-control:focus {
+  outline: none;
+  border: 1px solid #007bff;
+}
+
+.error-message {
+  color: crimson;
+}
+
+#lack {
+  background-color: #007bff;
+  color: #fff;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#lack:hover {
+  background-color: #0056b3;
+}

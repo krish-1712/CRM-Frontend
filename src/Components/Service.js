@@ -82,16 +82,12 @@ function Service() {
   return (
     <Navabar>
 
-      <div>
-        <img src='https://birft.com/wp-content/uploads/2019/04/customer-relationship-management-icon.jpg' className='site' alt=''></img>
-      </div>
-
       <div className='service-wrapper'>
         <div className='high1'>
           <h1 className='paper'>Service Create Page!</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group className='mb-3'>
-              <Form.Label className='can'>Name</Form.Label>
+              <Form.Label style={{ marginRight: "350px" }}>Name</Form.Label>
               <Form.Control
                 type='text'
                 placeholder='Enter your Name'
@@ -104,7 +100,7 @@ function Service() {
               {touched.name && errors.name ? <p className='error-message'>{errors.name}</p> : ''}
             </Form.Group>
             <Form.Group className='mb-3'>
-              <Form.Label className='can'>Status</Form.Label>
+              <Form.Label style={{ marginRight: "350px" }}>Status</Form.Label>
               <Form.Control
                 as='select'
                 className='status'
@@ -120,7 +116,7 @@ function Service() {
               {touched.status && errors.status ? <p className='error-message'>{errors.status}</p> : ''}
             </Form.Group>
             <Form.Group className='mb-3'>
-              <Form.Label className='can'>Description</Form.Label>
+              <Form.Label style={{ marginRight: "310px" }}>Description</Form.Label>
               <Form.Control
                 as="textarea"
                 placeholder="Enter your Description"
@@ -137,13 +133,6 @@ function Service() {
               Add
             </Button>
           </Form>
-        </div>
-        <div className='high2'>
-          <img
-            src='https://www.talisma.com/wp-content/uploads/2021/07/Title_8-distinguished-merits-of-CRM-Software-Solutions-for-businesses.jpg'
-            alt=''
-            id='look4'
-          />
         </div>
       </div>
     </Navabar>
