@@ -93,9 +93,10 @@
 
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
-import Forgot from "./components/Forgot"; // Updated import path
+
 import Password from "./components/Password"; // Updated import path
 import Register from "./components/Register"; // Updated import path
+import Forgot from "./components/Forgot"; // Updated import path
 import Dashboard from "./components/Dasboard"; // Corrected typo in component name
 import Redirect from "./components/Redirect"; // Updated import path
 import Contact from "./components/Contact"; // Updated import path
