@@ -115,18 +115,25 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/forgot" element={<Forgot />} />
-        <Route path="/password" element={<Password />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/url" element={<Redirect />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/service" element={<Service />} />
-        <Route path="/navbar" element={<Navbar />} />
-        <Route path="/contactpage" element={<ContactPage />} />
-        <Route path="/shorten" element={<URLShortenerForm />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/contactpage" element={<ContactPage />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/forgot" element={<Forgot />} />
+  
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/navbar" element={<Navbar />} />
+    
+        <Route path="/password" element={<Password />} />
+        <Route path="/url" element={<Redirect />} />
+        <Route path="/register" element={<Register />} />
+   
+  
+        <Route path="/service" element={<Service />} />
+     
+       
+        <Route path="/shorten" element={<URLShortenerForm />} />
+  
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
