@@ -93,22 +93,21 @@
 
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
-import Contact from "./components/Contact"; // Updated import path
-import ContactPage from "./components/ContactPage"; // Updated import path
+import Contact from "./components/Contact";
+import ContactPage from "./components/ContactPage";
 import Dashboard from "./components/Dasboard"; // Corrected typo in component name
-import Forgot from "./components/Forgot"; // Updated import path
-import Home from "./components/Home"; // Updated import path
-import Login from "./components/Login"; // Updated import path
+import Forgot from "./components/Forgot";
+import Home from "./components/Home";
+import Login from "./components/Login";
 import Navbar from "./components/Navabar"; // Corrected typo in component name
 
-import Password from "./components/Password"; // Updated import path
-import Redirect from "./components/Redirect"; // Updated import path
-import Register from "./components/Register"; // Updated import path
+import Password from "./components/Password";
+import Redirect from "./components/Redirect";
+import Register from "./components/Register";
 
-import Service from "./components/Service"; // Updated import path
+import Service from "./components/Service";
 
 import URLShortenerForm from "./components/URLShorternerForm"; // Updated import path
-
 
 export const url = "http://localhost:3000";
 
