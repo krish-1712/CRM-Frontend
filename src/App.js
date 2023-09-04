@@ -92,22 +92,22 @@
 
 
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import Contact from "components/Contact";
+import Contact from "Components/Contact";
 // import Contact from "components/Contact";
-import ContactPage from "components/ContactPage" ;
-import Dashboard from "components/Dasboard"; 
-import Forgot from "components/Forgot";
-import Home from "components/Home";
-import Login from "components/Login";
-import Navbar from "components/Navabar";
+import ContactPage from "Components/ContactPage" ;
+import Dashboard from "Components/Dasboard"; 
+import Forgot from "Components/Forgot";
+import Home from "Components/Home";
+import Login from "Components/Login";
+import Navabar from "Components/Navabar";
 
-import Password from "components/Password";
-import Redirect from "components/Redirect";
-import Register from "components/Register";
+import Password from "Components/Password";
+import Redirect from "Components/Redirect";
+import Register from "Components/Register";
 
-import Service from "components/Service";
+import Service from "Components/Service";
 
-import URLShortenerForm from "components/URLShorternerForm"; 
+import URLShortenerForm from "Components/URLShorternerForm"; 
 
 export const url = "http://localhost:3000";
 
@@ -122,8 +122,8 @@ function App() {
   
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/navbar" element={<Navbar />} />
-    
+        <Route path="/navbar" element={   <Navabar/>} />
+ 
         <Route path="/password" element={<Password />} />
         <Route path="/url" element={<Redirect />} />
         <Route path="/register" element={<Register />} />
