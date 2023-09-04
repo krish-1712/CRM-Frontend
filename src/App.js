@@ -94,12 +94,12 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Contact from "./components/Contact";
 // import Contact from "./components/Contact";
-import ContactPage from "./components/ContactPage";
-import Dashboard from "./components/Dasboard"; // Corrected typo in component name
+import ContactPage from "./components/ContactPage" ;
+import Dashboard from "./components/Dasboard"; 
 import Forgot from "./components/Forgot";
 import Home from "./components/Home";
 import Login from "./components/Login";
-import Navbar from "./components/Navabar"; // Corrected typo in component name
+import Navbar from "./components/Navabar";
 
 import Password from "./components/Password";
 import Redirect from "./components/Redirect";
@@ -107,7 +107,7 @@ import Register from "./components/Register";
 
 import Service from "./components/Service";
 
-import URLShortenerForm from "./components/URLShorternerForm"; // Updated import path
+import URLShortenerForm from "./components/URLShorternerForm"; 
 
 export const url = "http://localhost:3000";
 
