@@ -92,8 +92,8 @@
 
 
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-
 import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 import ContactPage from "./components/ContactPage";
 import Dashboard from "./components/Dasboard"; // Corrected typo in component name
 import Forgot from "./components/Forgot";
