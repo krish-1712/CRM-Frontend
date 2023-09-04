@@ -1,18 +1,18 @@
 
 // import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
-// import Forgot from "./components/Forgot";
-// import Password from "./components/Password";
-// import Register from "./components/Register";
-// import Dashboard from "./components/Dasboard";
-// import Redirect from "./components/Redirect";
-// import Contact from "./components/Contact";
-// import Service from "./components/Service";
-// import Navbar from "./components/Navabar";
-// import Home from "./components/Home";
-// import ContactPage from "./components/ContactPage";
-// import URLShortenerForm from "./components/URLShorternerForm";
-// import Login from "./components/Login";
+// import Forgot from "components/Forgot";
+// import Password from "components/Password";
+// import Register from "components/Register";
+// import Dashboard from "components/Dasboard";
+// import Redirect from "components/Redirect";
+// import Contact from "components/Contact";
+// import Service from "components/Service";
+// import Navbar from "components/Navabar";
+// import Home from "components/Home";
+// import ContactPage from "components/ContactPage";
+// import URLShortenerForm from "components/URLShorternerForm";
+// import Login from "components/Login";
 // export const url = "http://localhost:3000"
 
 
@@ -50,18 +50,18 @@
 
 // import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
-// import Forgot from "./components/Forgot";
-// import Password from "./components/Password";
-// import Register from "./components/Register";
-// import Dashboard from "./components/Dasboard";
-// import Redirect from "./components/Redirect";
-// import Contact from "./components/Contact";
-// import Service from "./components/Service";
-// import Navbar from "./components/Navabar";
-// import Home from "./components/Home";
-// import ContactPage from "./components/ContactPage";
-// import URLShortenerForm from "./components/URLShorternerForm";
-// import Login from "./components/Login";
+// import Forgot from "components/Forgot";
+// import Password from "components/Password";
+// import Register from "components/Register";
+// import Dashboard from "components/Dasboard";
+// import Redirect from "components/Redirect";
+// import Contact from "components/Contact";
+// import Service from "components/Service";
+// import Navbar from "components/Navabar";
+// import Home from "components/Home";
+// import ContactPage from "components/ContactPage";
+// import URLShortenerForm from "components/URLShorternerForm";
+// import Login from "components/Login";
 
 // export const url = "http://localhost:3000";
 
@@ -92,22 +92,22 @@
 
 
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import Contact from "./components/Contact.js";
-// import Contact from "./components/Contact";
-import ContactPage from "./components/ContactPage" ;
-import Dashboard from "./components/Dasboard"; 
-import Forgot from "./components/Forgot";
-import Home from "./components/Home";
-import Login from "./components/Login";
-import Navbar from "./components/Navabar";
+import Contact from "components/Contact.js";
+// import Contact from "components/Contact";
+import ContactPage from "components/ContactPage" ;
+import Dashboard from "components/Dasboard"; 
+import Forgot from "components/Forgot";
+import Home from "components/Home";
+import Login from "components/Login";
+import Navbar from "components/Navabar";
 
-import Password from "./components/Password";
-import Redirect from "./components/Redirect";
-import Register from "./components/Register";
+import Password from "components/Password";
+import Redirect from "components/Redirect";
+import Register from "components/Register";
 
-import Service from "./components/Service";
+import Service from "components/Service";
 
-import URLShortenerForm from "./components/URLShorternerForm"; 
+import URLShortenerForm from "components/URLShorternerForm"; 
 
 export const url = "http://localhost:3000";
 
