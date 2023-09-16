@@ -106,6 +106,24 @@ function Register() {
               />
               {touched.password && errors.password ? <p style={{ color: "crimson" }}>{errors.password}</p> : ""}
             </Form.Group>
+            <Form.Group className="mb-3">
+                    <Form.Label style={{ marginRight: "380px",color: 'black'  }}>Role</Form.Label>
+                    <Form.Control
+                        as="select"
+                        className="role"
+                        name="role"
+                        value={values.role}
+                        onChange={handleChange}
+                        style={{ width: '400px' }}
+                    >
+                        <option value=''>Select</option>
+                        <option value='Admin'>Admin</option>
+                        <option value='Manager'>Manager</option>
+                        <option value='Employee'>Employee</option>
+                        <option value='User'>User</option>
+                    </Form.Control>
+                    {touched.role && errors.role ? <p className='error-message'>{errors.role}</p> : ''}
+                </Form.Group>
             <Button variant="primary" type='submit' id='lite'>
               Signup
             </Button>
