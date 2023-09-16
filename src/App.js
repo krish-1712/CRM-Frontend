@@ -15,7 +15,7 @@ import Service from "Components/Service";
 
 import URLShortenerForm from "Components/URLShorternerForm"; 
 
-export const url = "http://localhost:3000";
+export const url = "https://crm-backend-5dkq.onrender.com";
 
 function App() {
   return (
