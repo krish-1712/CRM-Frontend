@@ -129,15 +129,15 @@ const Password = () => {
   const tokenParam = new URLSearchParams(window.location.search);
   const decodedToken = tokenParam.get('token');
   const { handleSubmit, handleChange, errors, touched, values } = useFormik({
-    //   initialValues: {
-    //     password: "",
-    //     newpassword: "",
-    //   },
-    initialValues: {
-      email: "", // Add this line
-      password: "",
-      newpassword: "",
-    },
+      initialValues: {
+        password: "",
+        newpassword: "",
+      },
+    // initialValues: {
+    //   email: "", 
+    //   password: "",
+    //   newpassword: "",
+    // },
     validationSchema: userSchemaValidation,
     onSubmit: async (values) => {
       try {
