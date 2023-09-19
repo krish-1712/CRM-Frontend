@@ -31,7 +31,10 @@ const Password = () => {
     onSubmit: async (values) => {
       try {
         const response = await axios.post(`${url}/users/password`, {
-          values,
+          // values,
+          // token: decodedToken
+          email: values.email,
+          password: values.password,
           token: decodedToken
         });
 
