@@ -98,6 +98,7 @@ const Dashboard = () => {
   const handleLogout = () => {
     sessionStorage.clear();
     navigate('/login');
+    toast.success("Logout successful");
   };
 
   return (

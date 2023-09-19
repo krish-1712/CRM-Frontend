@@ -151,6 +151,7 @@ const Password = () => {
           navigate('/login')
         } else {
           console.log('Unexpected response:', response);
+          
         }
       } catch (error) {
         toast.error(error.response.data.message)
