@@ -65,7 +65,8 @@ const Login = () => {
           <div className='masks'>
             <div className="carousel">
 
-              <div className="carousel-image" style={{ backgroundImage: "url('https://www.corefactors.in/blog/content/images/2023/11/Blog-Banner_Cultivating-Success-CRM-min.png')" }}></div>               <div className="carousel-image" style={{ backgroundImage: "url('https://binmile.com/wp-content/uploads/2022/04/Right-CRM-System-For-Your-Business.webp')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://www.corefactors.in/blog/content/images/2023/11/Blog-Banner_Cultivating-Success-CRM-min.png')" }}></div>               
+              <div className="carousel-image" style={{ backgroundImage: "url('https://binmile.com/wp-content/uploads/2022/04/Right-CRM-System-For-Your-Business.webp')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://www.hashmicro.com/blog/wp-content/uploads/2023/03/crm-software.jpg')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://crm.io/images/kp/productive-employees-find-ways-to-grow-your-business.png?v=1687437285707923381')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://crmtiger.com/blog/wp-content/uploads/2017/11/systemcrm.png')" }}></div>

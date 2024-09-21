@@ -40,7 +40,8 @@ const ContactPage = () => {
           <div className='masks'>
             <div className="carousel">
 
-              <div className="carousel-image" style={{ backgroundImage: "url('https://www.signitysolutions.com/hubfs/What-is-CRM-min.jpg')" }}></div>               <div className="carousel-image" style={{ backgroundImage: "url('https://www.shipmonk.com/wp-content/uploads/2024/03/Customer-Relationship-Management-for-Ecommerce-Brands-Landscape.jpg')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://www.signitysolutions.com/hubfs/What-is-CRM-min.jpg')" }}></div>               
+              <div className="carousel-image" style={{ backgroundImage: "url('https://www.shipmonk.com/wp-content/uploads/2024/03/Customer-Relationship-Management-for-Ecommerce-Brands-Landscape.jpg')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://cdn.educba.com/academy/wp-content/uploads/2016/04/Customer-Relationship-Management-Tools-1.jpg')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://www.investopedia.com/thmb/3Ty2afPlEGYWLh64_dE0O87kP6A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/customer_relation_management.asp-final-a6b5aa33bf034f64a793ac97834cd669.jpg')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://tscfm.org/wp-content/uploads/2022/08/guide-to-relationship-management-1024x768.jpg')" }}></div>

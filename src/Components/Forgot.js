@@ -43,7 +43,8 @@ const Forgot = () => {
           <div className='masks'>
             <div className="carousel">
 
-              <div className="carousel-image" style={{ backgroundImage: "url('https://thumbs.dreamstime.com/b/crm-customer-relationship-management-automation-system-software-business-technology-concept-328539300.jpg')" }}></div>               <div className="carousel-image" style={{ backgroundImage: "url('https://miro.medium.com/v2/resize:fit:1400/1*8NQEU7h8i8LufyISpwu2XQ.png')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://thumbs.dreamstime.com/b/crm-customer-relationship-management-automation-system-software-business-technology-concept-328539300.jpg')" }}></div>               
+              <div className="carousel-image" style={{ backgroundImage: "url('https://miro.medium.com/v2/resize:fit:1400/1*8NQEU7h8i8LufyISpwu2XQ.png')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://www.cloudifyapps.com/content/images/2022/05/CRM-software-banner--1-.jpg')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://c8.alamy.com/comp/KDR54Y/illustrative-diagram-of-customer-relationship-management-for-managing-KDR54Y.jpg')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://media.licdn.com/dms/image/D5612AQGzBAbMWWpxaA/article-cover_image-shrink_720_1280/0/1662973847695?e=2147483647&v=beta&t=hTNEgpSZRRwnxI0K2wv1qJBIIBnccNrd_DxVY1ouOJA')" }}></div>

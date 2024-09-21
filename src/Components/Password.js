@@ -59,7 +59,8 @@ const Password = () => {
           <div className='masks'>
             <div className="carousel">
 
-              <div className="carousel-image" style={{ backgroundImage: "url('https://media.licdn.com/dms/image/D4D12AQGuyPByTCa4Rw/article-cover_image-shrink_720_1280/0/1663923402545?e=2147483647&v=beta&t=W0Wqw2QGUfZ9q9N_nKsWgSIlTe6JCYf6Aco2zQBAryM')" }}></div>               <div className="carousel-image" style={{ backgroundImage: "url('https://i.ytimg.com/vi/NKUa3wZQSEI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBg5u5GO8jQ7rlRZx2uGlIoT1gpSg')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://media.licdn.com/dms/image/D4D12AQGuyPByTCa4Rw/article-cover_image-shrink_720_1280/0/1663923402545?e=2147483647&v=beta&t=W0Wqw2QGUfZ9q9N_nKsWgSIlTe6JCYf6Aco2zQBAryM')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://i.ytimg.com/vi/NKUa3wZQSEI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBg5u5GO8jQ7rlRZx2uGlIoT1gpSg')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://www.agilecrm.com/blog/wp-content/uploads/2022/03/CRM-Software-for-Small-Business.png')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://store.outrightcrm.com/wp-content/uploads/2021/08/mayank-bolg-project-header-1.png')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://www.advotics.com/wp-content/uploads/2020/08/CRM-software-advotics-1024x576.png')" }}></div>

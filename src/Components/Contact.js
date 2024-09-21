@@ -75,7 +75,8 @@ const Contact = () => {
           <div className='masks'>
             <div className="carousel">
 
-              <div className="carousel-image" style={{ backgroundImage: "url('https://media.licdn.com/dms/image/D4D12AQF66NJcoJITMQ/article-cover_image-shrink_720_1280/0/1686141376542?e=2147483647&v=beta&t=kI4aUSU2BeZh-im3dKw9fo0qzzjD5FLqTen59GbMXtc')" }}></div>               <div className="carousel-image" style={{ backgroundImage: "url('https://cdn.prod.website-files.com/64d5c8b8417c07810e9de9a7/65115bec8a8e1ab8aee427bf_Importance-of-Customer-Relationship-Management-1.webp')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://media.licdn.com/dms/image/D4D12AQF66NJcoJITMQ/article-cover_image-shrink_720_1280/0/1686141376542?e=2147483647&v=beta&t=kI4aUSU2BeZh-im3dKw9fo0qzzjD5FLqTen59GbMXtc')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://cdn.prod.website-files.com/64d5c8b8417c07810e9de9a7/65115bec8a8e1ab8aee427bf_Importance-of-Customer-Relationship-Management-1.webp')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://media.licdn.com/dms/image/v2/D4D12AQGbEOPmdDt2Tg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1669384647571?e=2147483647&v=beta&t=vNZXrVCR7WBzWuaxD-zRthnf4spV9t6jcf2kLcgKutQ')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://i0.wp.com/www.sutisoft.com/blog/wp-content/uploads/2023/01/CRM.jpg?fit=1200%2C675&ssl=1')" }}></div>
               <div className="carousel-image" style={{ backgroundImage: "url('https://www.mygreatlearning.com/blog/wp-content/uploads/2022/02/crm-benefits-1024x576.jpg')" }}></div>
