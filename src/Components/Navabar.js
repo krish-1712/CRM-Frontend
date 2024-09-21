@@ -5,19 +5,26 @@ const Navabar = ({ children }) => {
     return (
         <div className="loot">
             <div className="cont">
-                <p className="app">CRM Application</p>
-                <p >
-
-                    <Link to="/home" id="home">Home</Link>
+                <div className="app">CRM Application</div>
+                <p>
+                    <Link to="/home" id="home">
+                        <i className="fas fa-home"></i>
+                    </Link>
                 </p>
                 <p>
-                    <Link to="/login" id="home1">Login</Link>
+                    <Link to="/login" id="home1" >
+                        <i className="fas fa-sign-in-alt"></i>
+                    </Link>
                 </p>
                 <p>
-                    <Link to="/register" id="home2">Signup</Link>
+                    <Link to="/register" id="home2">
+                        <i className="fas fa-user-plus"></i>
+                    </Link>
                 </p>
                 <p>
-                    <Link to="/contactpage" id="home2">Contact</Link>
+                    <Link to="/contactpage" id="home2">
+                        <i className="fas fa-envelope"></i>
+                    </Link>
                 </p>
             </div>
 
@@ -30,3 +37,6 @@ const Navabar = ({ children }) => {
 }
 
 export default Navabar
+
+
+

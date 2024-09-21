@@ -10,6 +10,7 @@ const ContactPage = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -32,48 +33,66 @@ const ContactPage = () => {
       toast.error(error.response.data.message);
     }
   };
-
   return (
     <Navabar>
-      <div className="grid-container">
-        <div className="contactpage1">
-          <h1 style={{ color: 'black' }}>Contact Us</h1>
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="name" style={{ color: 'black', marginRight: "310px" }} >Name</label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Your name.."
-              required
-            />
+      <div className='hero'>
+        <div className="home-container">
+          <div className='masks'>
+            <div className="carousel">
 
-            <label htmlFor="email" style={{ color: 'black', marginRight: "330px" }}>Email</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Your email.."
-              required
-            />
+              <div className="carousel-image" style={{ backgroundImage: "url('https://www.signitysolutions.com/hubfs/What-is-CRM-min.jpg')" }}></div>               <div className="carousel-image" style={{ backgroundImage: "url('https://www.shipmonk.com/wp-content/uploads/2024/03/Customer-Relationship-Management-for-Ecommerce-Brands-Landscape.jpg')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://cdn.educba.com/academy/wp-content/uploads/2016/04/Customer-Relationship-Management-Tools-1.jpg')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://www.investopedia.com/thmb/3Ty2afPlEGYWLh64_dE0O87kP6A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/customer_relation_management.asp-final-a6b5aa33bf034f64a793ac97834cd669.jpg')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://tscfm.org/wp-content/uploads/2022/08/guide-to-relationship-management-1024x768.jpg')" }}></div>
 
-            <label htmlFor="message" style={{ color: 'black', marginRight: "290px" }}>Message</label>
-            <textarea
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              placeholder="Write something.."
-              required
-            ></textarea><br></br>
 
-            <button type="submit" id='none' >Submit</button>
-          </form>
+            </div>
+          </div>
+
+          <div className="contents">
+
+            <div className="grid-container">
+              <div className="contactpage1">
+                <h1 style={{ color: 'black' }}>Contact Us</h1>
+                <form onSubmit={handleSubmit}>
+                  <label htmlFor="name" style={{ color: 'black', marginRight: "310px" }} >Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Your name.."
+                    required
+                  />
+
+                  <label htmlFor="email" style={{ color: 'black', marginRight: "330px" }}>Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Your email.."
+                    required
+                  />
+
+                  <label htmlFor="message" style={{ color: 'black', marginRight: "290px" }}>Message</label>
+                  <textarea
+                    id="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder="Write something.."
+                    required
+                  ></textarea><br></br>
+
+                  <button type="submit" id='none' >Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Navabar>
-  );
-};
+  )
+}
 
-export default ContactPage;
+export default ContactPage

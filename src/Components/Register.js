@@ -19,7 +19,8 @@ const userSchemaValidation = yup.object({
   lastname: yup.string().required("Last name is required"),
 });
 
-function Register() {
+
+const Register = () => {
   let navigate = useNavigate();
 
   useEffect(() => {
@@ -46,13 +47,27 @@ function Register() {
       }
     },
   });
-
   return (
     <Navabar>
+    <div className='hero'>
+      <div className="home-container">
+        <div className='masks'>
+          <div className="carousel">
 
-      <div className='register-wrapper'>
+          <div className="carousel-image" style={{ backgroundImage: "url('https://media.licdn.com/dms/image/v2/D5612AQEdPr1oBf_huQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1664603331847?e=2147483647&v=beta&t=AhMPiprcNFoqFMC8LnTDYMXR40DFdd-0d8nOBucxzvA')" }}></div>               <div className="carousel-image" style={{ backgroundImage: "url('https://happay.com/blog/wp-content/uploads/sites/12/2022/08/crm-vs-erp.webp')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://img.freepik.com/free-vector/gradient-crm-illustration_23-2149379176.jpg')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1642381198/photo/customer-relationship-management.jpg?s=612x612&w=0&k=20&c=hewouH78IzuySSSq6QawNCBQCMPfaIfEvTYIdhTZYJs=')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://programmers.io/wp-content/uploads/2022/07/CRM-tool-to-amplify-efficiency.jpg')" }}></div>
+
+
+          </div>
+        </div>
+
+        <div className="contents-log">
+
+        <div className='register-wrapper'>
         <div className='grid-item'>
-          <h1 style={{ "textAlign": "left", color: 'black' }}>Signup Here!</h1>
+          <h1>Signup Here!</h1>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3">
               <Form.Label style={{ marginRight: "350px", color: 'black' }}>First Name</Form.Label>
@@ -131,8 +146,11 @@ function Register() {
         </div>
 
       </div>
+      </div>
+      </div>
+      </div>
     </Navabar>
-  );
+  )
 }
 
-export default Register;
+export default Register

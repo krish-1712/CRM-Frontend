@@ -59,15 +59,16 @@
 
 }
 
+#lime {
+  margin-left: 930px;
+  color: white;
+}
+
 #short {
   margin-top: 85px;
   margin-left: 10px;
 }
 
-#lime {
-  margin-left: 930px;
-  color: white;
-}
 
 .let {
   width: 100%;
@@ -77,4 +78,7 @@
 .do {
   background-image: url('https://wallpaperaccess.com/full/1518684.jpg');
   background-size: cover;
+  overflow-y: scroll;
+  height: 790px;
+
 }

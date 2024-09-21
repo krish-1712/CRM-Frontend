@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { Button, Table, TableHead, TableRow, TableCell, TableBody, styled } from '@mui/material';
 import jwt_decode from 'jwt-decode';
 import './Dasboard.css';
+import Navabar from './Navabar';
 
 
 
@@ -16,17 +17,24 @@ const StyledTable = styled(Table)({
   width: '600px',
   height: '100px',
   overflow: 'auto',
+
 });
 const StyledHeaderCell = styled(TableCell)(({ theme }) => ({
   fontWeight: 'bold',
   backgroundColor: theme.palette.primary.main,
   color: theme.palette.common.white,
   padding: '10px',
+  fontFamily: "Times New Roman",
+  fontSize: "20px"
+
 }));
 
 const StyledBodyCell = styled(TableCell)(({ theme }) => ({
   backgroundColor: theme.palette.grey[200],
   padding: '10px',
+  color: 'black',
+  fontFamily: "Times New Roman",
+  fontSize: "20px"
 }));
 const Dashboard = () => {
   const [counts, setCounts] = useState({ serviceRequestCount: 0, contactCount: 0 });
@@ -102,94 +110,92 @@ const Dashboard = () => {
   };
 
   return (
+    <Navabar>
 
-    <div className='do'>
+      <div className='do'>
 
-      <Button variant="contained" color="success" id='service' onClick={() => navigate('/service')}>
-        Service
-      </Button>
-      <Button variant="contained" id='contact' color="success" onClick={() => navigate('/contact')} style={{ "marginLeft": "10px" }}>
-        Contact
-      </Button>
-      <Button variant="contained" color="success" id='short' onClick={() => navigate('/shorten')}>
-        Shortern
-      </Button>
-      <Button variant="contained" color="error" id='lime' onClick={handleLogout}>
-        Logout
-      </Button>
+        <Button variant="contained" color="success" id='service' onClick={() => navigate('/service')}>
+          Service
+        </Button>
+        <Button variant="contained" id='contact' color="success" onClick={() => navigate('/contact')} style={{ "marginLeft": "10px" }}>
+          Contact
+        </Button>
+        <Button variant="contained" color="success" id='short' onClick={() => navigate('/shorten')}>
+          Shortern
+        </Button>
+        <Button variant="contained" color="error" id='lime' onClick={handleLogout}>
+          Logout
+        </Button>
 
-      <div className='dashed'>
-        <h2 className='lock'>Dashboard</h2>
-        <StyledTable>
-          <TableHead>
-            <TableRow>
-              <StyledHeaderCell>Service Request Count</StyledHeaderCell>
-              <StyledHeaderCell>Contact Count</StyledHeaderCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            <TableRow>
-              <StyledBodyCell>{counts.serviceRequestCount}</StyledBodyCell>
-              <StyledBodyCell>{counts.contactCount}</StyledBodyCell>
-            </TableRow>
-          </TableBody>
-        </StyledTable>
-      </div>
-
-
-      <div className="details-container">
-        <div className="service-details">
-          <h3 className='serve'>Service Details</h3>
+        <div className='dashed'>
+          <h2 className='lock'>Dashboard</h2>
           <StyledTable>
             <TableHead>
               <TableRow>
-                <StyledHeaderCell>Name</StyledHeaderCell>
-                <StyledHeaderCell>Description</StyledHeaderCell>
-                <StyledHeaderCell>Status</StyledHeaderCell>
+                <StyledHeaderCell>Service Request Count</StyledHeaderCell>
+                <StyledHeaderCell>Contact Count</StyledHeaderCell>
               </TableRow>
             </TableHead>
             <TableBody>
-              {serviceDetails.map((service) => (
-                <TableRow key={service._id}>
-                  <StyledBodyCell>{service.name}</StyledBodyCell>
-                  <StyledBodyCell>{service.description}</StyledBodyCell>
-                  <StyledBodyCell>{service.status}</StyledBodyCell>
-                </TableRow>
-              ))}
+              <TableRow>
+                <StyledBodyCell>{counts.serviceRequestCount}</StyledBodyCell>
+                <StyledBodyCell>{counts.contactCount}</StyledBodyCell>
+              </TableRow>
             </TableBody>
           </StyledTable>
         </div>
-        <div className="contact-details">
-          <h3 className='cont'>Contact Details</h3>
-          <StyledTable>
-            <TableHead>
-              <TableRow>
-                <StyledHeaderCell>Name</StyledHeaderCell>
-                <StyledHeaderCell>Email</StyledHeaderCell>
-                <StyledHeaderCell>PhoneNumber</StyledHeaderCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {contactDetails.map((contact) => (
-                <TableRow key={contact._id}>
-                  <StyledBodyCell>{contact.name}</StyledBodyCell>
-                  <StyledBodyCell>{contact.email}</StyledBodyCell>
-                  <StyledBodyCell>{contact.phonenumber}</StyledBodyCell>
+
+
+        <div className="details-container">
+          <div className="service-details">
+            <h3 className='serve'>Service Details</h3>
+            <StyledTable>
+              <TableHead>
+                <TableRow>
+                  <StyledHeaderCell>Name</StyledHeaderCell>
+                  <StyledHeaderCell>Description</StyledHeaderCell>
+                  <StyledHeaderCell>Status</StyledHeaderCell>
                 </TableRow>
-              ))}
-            </TableBody>
-          </StyledTable>
+              </TableHead>
+              <TableBody>
+                {serviceDetails.map((service) => (
+                  <TableRow key={service._id}>
+                    <StyledBodyCell>{service.name}</StyledBodyCell>
+                    <StyledBodyCell>{service.description}</StyledBodyCell>
+                    <StyledBodyCell>{service.status}</StyledBodyCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </StyledTable>
+          </div>
+          <div className="contact-details">
+            <h3 className='cont'>Contact Details</h3>
+            <StyledTable>
+              <TableHead>
+                <TableRow>
+                  <StyledHeaderCell>Name</StyledHeaderCell>
+                  <StyledHeaderCell>Email</StyledHeaderCell>
+                  <StyledHeaderCell>PhoneNumber</StyledHeaderCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {contactDetails.map((contact) => (
+                  <TableRow key={contact._id}>
+                    <StyledBodyCell>{contact.name}</StyledBodyCell>
+                    <StyledBodyCell>{contact.email}</StyledBodyCell>
+                    <StyledBodyCell>{contact.phonenumber}</StyledBodyCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </StyledTable>
+          </div>
         </div>
       </div>
-    </div>
-
+    </Navabar>
 
   );
 };
 
 export default Dashboard;
-
-
-
 
 

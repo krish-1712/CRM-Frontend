@@ -16,7 +16,7 @@ const userSchemaValidation = yup.object({
   password: yup.string().required('Password is required'),
 });
 
-function Login() {
+const Login = () => {
   const navigate = useNavigate();
 
   const { handleSubmit, handleChange, errors, touched, values } = useFormik({
@@ -58,56 +58,75 @@ function Login() {
       navigate('/dashboard');
     }
   }, [navigate]);
-
   return (
     <Navabar>
-      <div className='login-wrapper'>
-        <div className='log1'>
-          <h1 style={{ textAlign: 'center', color: 'black' }}>Login Here</h1>
-          <Form onSubmit={handleSubmit}>
-            <Form.Group className='mb-3'>
-              <Form.Label style={{ marginRight: "290px" , color:"black" }} >Email address</Form.Label>
-              <Form.Control
-                type='email'
-                placeholder='Enter email address'
-                className='email'
-                name='email'
-                value={values.email}
-                onChange={handleChange}
-                style={{ width: '400px' }}
-              />
-              {touched.email && errors.email ? <p style={{ color: 'crimson' }}>{errors.email}</p> : ''}
-            </Form.Group>
-            <Form.Group className='mb-3'>
-              <Form.Label style={{ marginRight: "330px",color:"black" }}>Password</Form.Label>
-              <Form.Control
-                type='password'
-                placeholder='Enter the Password'
-                className='password'
-                name='password'
-                value={values.password}
-                onChange={handleChange}
-                style={{ width: '400px' }}
-              />
-              {touched.password && errors.password ? (
-                <p style={{ color: 'crimson' }}>{errors.password}</p>
-              ) : (
-                ''
-              )}
-            </Form.Group>
-            <Button variant='primary' id='suit' type='submit' style={{ width: "100px" }}>
-              Submit
-            </Button><br></br>
+      <div className='hero'>
+        <div className="home-container">
+          <div className='masks'>
+            <div className="carousel">
+
+              <div className="carousel-image" style={{ backgroundImage: "url('https://www.corefactors.in/blog/content/images/2023/11/Blog-Banner_Cultivating-Success-CRM-min.png')" }}></div>               <div className="carousel-image" style={{ backgroundImage: "url('https://binmile.com/wp-content/uploads/2022/04/Right-CRM-System-For-Your-Business.webp')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://www.hashmicro.com/blog/wp-content/uploads/2023/03/crm-software.jpg')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://crm.io/images/kp/productive-employees-find-ways-to-grow-your-business.png?v=1687437285707923381')" }}></div>
+              <div className="carousel-image" style={{ backgroundImage: "url('https://crmtiger.com/blog/wp-content/uploads/2017/11/systemcrm.png')" }}></div>
 
 
-            <NavLink to="/forgot" >Forgot Password</NavLink>
+            </div>
+          </div>
 
-            <NavLink to="/register">Create Account</NavLink>
-          </Form>
+          <div className="contents">
+
+            <div className='login-wrapper'>
+              <div className='log1'>
+                <h1 style={{ textAlign: 'center' }}>Login Here</h1>
+                <Form onSubmit={handleSubmit}>
+                  <Form.Group className='mb-3'>
+                    <Form.Label style={{ marginRight: "290px", color: "black" }} >Email address</Form.Label>
+                    <Form.Control
+                      type='email'
+                      placeholder='Enter email address'
+                      className='email'
+                      name='email'
+                      value={values.email}
+                      onChange={handleChange}
+                      style={{ width: '400px' }}
+                    />
+                    {touched.email && errors.email ? <p style={{ color: 'crimson' }}>{errors.email}</p> : ''}
+                  </Form.Group>
+                  <Form.Group className='mb-3'>
+                    <Form.Label style={{ marginRight: "330px", color: "black" }}>Password</Form.Label>
+                    <Form.Control
+                      type='password'
+                      placeholder='Enter the Password'
+                      className='password'
+                      name='password'
+                      value={values.password}
+                      onChange={handleChange}
+                      style={{ width: '400px' }}
+                    />
+                    {touched.password && errors.password ? (
+                      <p style={{ color: 'crimson' }}>{errors.password}</p>
+                    ) : (
+                      ''
+                    )}
+                  </Form.Group>
+                  <Button variant='primary' id='suit' type='submit' style={{ width: "100px" }}>
+                    Submit
+                  </Button><br></br>
+
+
+                  <NavLink to="/forgot" >Forgot Password</NavLink>
+
+                  <NavLink to="/register">Create Account</NavLink>
+                </Form>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Navabar>
-  );
+  )
 }
 
-export default Login;
+export default Login
