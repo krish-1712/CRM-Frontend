@@ -1,3 +1,5 @@
+**Note**: As I used Render for deploying backend server, it may take some time to start the server. so kindly wait for it.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -67,15 +69,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-CRM - Front end link(https://clinquant-kelpie-587408.netlify.app/)
-CRM - Back end link(https://crm-backend-oofi.onrender.com/)
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
 
 
-
+(https://crm-backend-oofi.onrender.com/)
 
 
 
